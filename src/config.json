@@ -1,0 +1,118 @@
+{ 
+  "theme":{
+    "logo": "url",
+    "primaryColor": "red",
+    "secondaryColor": "yellow"
+  },
+  "components":[
+    {
+      "type": "naviagtion",
+      "siteName": "Simple CMS",
+      "navigationItems": ["Services", "Portfolio", "About", "Team", "Contact"]
+    },
+    {
+      "type": "header",
+      "backgroundImage":"/img/header-bg.jpg",
+      "leadIn":"Welcome To Our Studio!",
+      "heading":"It's Nice To Meet You",
+      "buttonText":"Tell Me More"
+    },
+    {
+      "type": "service",
+      "heading": "Services",
+      "subHeading": "Lorem ipsum dolor sit amet consectetur.",
+      "serviceList": [
+        {
+          "heading": "E-Commerce",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
+          "icon": "fa-shopping-cart"
+        },
+        {
+          "heading": "Responsive Design",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
+          "icon": "fa-laptop"
+        },
+        {
+          "heading": "Web Security",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
+          "icon": "fa-lock"
+        }
+      ]
+    },
+    {
+      "type": "portfolio",
+      "heading": "Portfolio",
+      "subHeading": "Lorem ipsum dolor sit amet consectetur.",
+      "portfolioList": [
+        {
+          "imageUrl":"img/portfolio/01-thumbnail.jpg",
+          "imageAlt":"",
+          "link":"#portfolioModal1",
+          "heading":"Threads",
+          "subHeading":"Illustration"
+        },
+        {
+          "imageUrl":"img/portfolio/02-thumbnail.jpg",
+          "imageAlt":"",
+          "link":"#portfolioModal1",
+          "heading":"Explore",
+          "subHeading":"Graphic Design"
+        },
+        {
+          "imageUrl":"img/portfolio/03-thumbnail.jpg",
+          "imageAlt":"",
+          "link":"#portfolioModal1",
+          "heading":"Finish",
+          "subHeading":"Identity"
+        },
+        {
+          "imageUrl":"img/portfolio/04-thumbnail.jpg",
+          "imageAlt":"",
+          "link":"#portfolioModal1",
+          "heading":"Lines",
+          "subHeading":"Branding"
+        },
+        {
+          "imageUrl":"img/portfolio/05-thumbnail.jpg",
+          "imageAlt":"",
+          "link":"#portfolioModal1",
+          "heading":"Southwest",
+          "subHeading":"Website Design"
+        },
+        {
+          "imageUrl":"img/portfolio/06-thumbnail.jpg",
+          "imageAlt":"",
+          "link":"#portfolioModal1",
+          "heading":"Lorne",
+          "subHeading":"Illustration"
+        }
+      ]
+    },
+    {
+      "type":"footer",
+      "description":"Copyright simple-cms 2017",
+      "social":[
+        {
+          "type":"facebook",
+          "link":"#"
+        },{
+          "type":"twitter",
+          "link":"#"
+        },{
+          "type":"linkedin",
+          "link":"#"
+        }
+      ],
+      "quickLinks":[
+        {
+          "text":"Privacy Policy",
+          "url":"#"
+        }, {
+          "text":"Terms of Use",
+          "url":"#"
+        }
+      ]
+    }
+  ]
+    
+}
