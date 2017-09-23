@@ -24,8 +24,6 @@ class App extends Component {
 
         <Portfolio />
 
-        <About />
-
         <Team />
 
         <Client />
