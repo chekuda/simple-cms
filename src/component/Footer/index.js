@@ -4,7 +4,7 @@ export default class Footer extends PureComponent {
   render(){
     return(
       <footer>
-        <div classNameName="container">
+        <div className="container">
           <div className="row">
             <div className="col-md-4">
               <span className="copyright">Copyright &copy; Your Website 2017</span>
