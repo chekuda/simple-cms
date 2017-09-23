@@ -1,32 +1,47 @@
 import React, { PureComponent } from 'react';
 
+import './style.css';
+
+const navigation = {
+  siteName: 'Simple CMS',
+  navigationItems: ['Services', 'Portfolio', 'About', 'Team', 'Contact']
+}
+
 export default class Navigation extends PureComponent {
+  state = {
+    navState: ''
+  }
+
+  componentDidMount() {
+    let that = this;
+    
+    window.onscroll = () => {
+        if (window.scrollY > 100 && this.state.navState !== 'fixedToTop') {
+          that.setState({
+            navState: 'fixedToTop'
+          })
+        } else if (window.scrollY < 100  && this.state.navState !== '') {
+          that.setState({
+            navState: ''
+          })
+        }
+    };
+  }
+
   render(){
     return(
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <nav className={`navbar navbar-expand-lg navbar-dark fixed-top ${this.state.navState}`} id="mainNav">
         <div className="container">
-          <a className="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-          <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i className="fa fa-bars"></i>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarResponsive">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#services">Services</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#about">About</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#team">Team</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
-              </li>
+          <a className="navbar-brand" href="#page-top">{navigation.siteName}</a>
+          <div className="navbarResponsive" id="navbarResponsive">
+            <ul className="navbar-nav ">
+              {navigation.navigationItems.map((navigationItem, index) => {
+                return(
+                  <li className="nav-item" key={navigationItem}>
+                    <a className="nav-link" href={`#${navigationItem.toLowerCase()}`}>{navigationItem}</a>
+                  </li>
+                )
+              })}
             </ul>
           </div>
         </div>
