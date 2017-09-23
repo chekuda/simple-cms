@@ -24,11 +24,11 @@ class App extends Component {
 
         <Portfolio />
 
-        <Team />
+        {/*<Team />*/}
 
-        <Client />
+        {/*<Client />*/}
 
-        <Contact />
+        {/*<Contact />*/}
 
         <Footer />
       </div>
