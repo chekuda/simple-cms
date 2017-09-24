@@ -1,14 +1,19 @@
 { 
   "theme":{
     "logo": "url",
-    "primaryColor": "red",
-    "secondaryColor": "yellow"
+    "emphasisFontColor": "#212529",
+    "ordinaryFontColor": "#868e96",
+    "buttonColor": "#fff",
+    "buttonBackgorundColor": "#fed136",
+    "buttonBackgroundColorHover": "#fec503",
+    "linkColor": "#fed136",
+    "linkColorHover": "#fec503",
   },
   "components":[
     {
       "type": "naviagtion",
       "siteName": "Simple CMS",
-      "navigationItems": ["Services", "Portfolio", "About", "Team", "Contact"]
+      "navigationItems": ["Services", "Portfolio"]
     },
     {
       "type": "header",

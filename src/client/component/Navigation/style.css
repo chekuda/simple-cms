@@ -4,6 +4,7 @@
 
 .navbar.fixedToTop {
   background-color: #222222;
+  box-shadow: 0px 1px 8px #444;
   padding: 0;
 }
   
